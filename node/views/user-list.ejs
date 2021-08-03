@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Users from MySQL using Node and Docker</title>
+</head>
+<body>
+    <div class="table-data">
+<h1>Full Cycle!!</h1>
+    <%
+    if(userData.length!=0){
+    var i=1;
+    userData.forEach(function(data){
+    %>
+    <ul>
+        <li><%=data.name %></li>
+    </ul>
+    <%  i++; }) %>
+    <% } else{ %>
+        <tr>
+            <td colspan="7">No Data Found</td>
+        </tr>
+    <% } %>
+    </div>
+</body>
+</html>
